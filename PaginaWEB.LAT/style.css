@@ -1,0 +1,731 @@
+/*Parte de JoseJS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+body {
+    width:100%;
+    overflow-x: hidden;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #353d6d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    animation-duration: 3s;
+}
+
+.loader-container.fade-out {
+    top: -120%;
+}
+
+/*Parte de LIZBET*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/** Navegation Menu **/
+.aaa{
+    align-items: center;
+    justify-content: center;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ffffff3a;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .list-container ul{
+    margin-right: 80px;
+    display: flex;}
+.menu .list-container ul li{
+    list-style: none;
+}
+.menu .list-container ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    border-radius: 24px;
+    color: #ffd900;
+    padding:8px;
+    transition: 0.3s;
+    font-size: 16px;
+    -webkit-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+
+.menu .list-container ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.726);
+    transition: all .5s;
+    
+}
+
+
+/* Submenu*/
+
+.submenu{
+    border-radius: 24px;
+	position: absolute;
+	background: #ffffff7a;
+	width: 50%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.lists li:hover .submenu{
+	visibility: visible;
+    opacity: 5;
+    display: block;
+
+}
+
+.logo{
+
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 40px;
+}
+.logo a{
+
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+}
+
+
+/** Navegation Menu **/
+
+/** IMG Header **/
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:url(/Sepulveda/img/FOTOPORTADA01SLP.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img-header .bienvenido{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .bienvenido h1{
+    font-size: 60px;
+    color:#fff;
+    font-weight: 200;
+}
+/*PALABRA DEL DIRECTOR*/
+
+.Mensaje {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.menssage {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.img {
+
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+
+.Mensaje {
+    background-color: #000000;
+    display: flex;
+    padding: 25px;
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+.texto {
+    width: 100%;
+    padding-bottom: 25px;
+    text-align: center;
+    padding: 15px;
+}
+
+.alertA {
+    height: 25%;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.alert {
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #ffc400;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.alert:hover {
+
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+/*MISION VISION*/
+.ReseñaHi {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Imagen {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 90%;
+    height: 100vh;
+}
+
+.contenedor {
+
+    background-color: rgba(241, 241, 241, 0.813);
+    display: flex;
+    padding: 25px;
+
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 25px;
+}
+
+.Parrafos {
+
+    padding: 50px;
+    font-size: 900px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.se {
+    font-size: 35px;
+    color: rgb(45, 45, 151);
+}
+
+.button{
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    font-size: 10px 0;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #f3c406;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+
+}
+
+.MisiónYVisión {
+    background-image: url(/Sepulveda/img/1460282955132916198_gif\ \(800×356\).gif);
+    /*background-color: #f3c406;*/
+    align-content: center;
+    padding-top: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+.contenidoVM {
+    display: flex;
+    text-align: center;
+}
+
+.Mision {
+    display: flex;
+    flex-direction: column;
+    color: #f0f1f5;
+    width: 50%;
+    height: 60vh;
+    padding-right: 50px;
+    padding-left: 200px;
+    padding-top: 10px;
+}
+
+.TituloMs {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00000094;
+    align-items: center;
+    height: 15%;
+    padding-top: 20px;
+}
+
+.ContMision {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00000094;
+    height: 70%;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.Vision {
+    color: #ffffff;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 200px;
+    padding-top: 10px;
+}
+
+.TituloVs {
+    background-color: #00000094;
+    font-family: 'Montserrat', sans-serif;
+    height: 15%;
+    padding-top: 20px;
+}
+
+.ContVision {
+    background-color: #00000094;
+    font-family: 'Montserrat', sans-serif;
+    height: 70%;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/*CARRUSEL DE ALUMNOS DESTACADOS*/
+
+.carrusel {
+    background: rgb(255, 230, 0);
+    width: 100%;
+    height: 50%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    min-height: 100vh;
+}
+
+.tituloC{
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 30px;
+    margin: 55px auto;
+    text-align: left; 
+    position: relative;
+}
+.tituloC::before{
+    content: ' ';
+    border-bottom: 5px solid rgb(42, 62, 119);
+    border-radius: 20px;
+    position: absolute;
+    bottom: -5px;
+    width: 35%;
+    left: 0;
+}
+.container {
+    width: 90%;
+    padding: 10px 30px;
+}
+
+.container .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.container .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+
+.container .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.container .swiper-slide .card-description {
+    padding: 1rem 1rem;
+}
+
+.container .swiper-slide .card-title,
+.container .swiper-slide .card-text {
+    margin-bottom: .5rem;
+}
+
+.container .swiper-slide .card-link {
+    text-align: center;
+
+}
+
+.container .swiper-slide .card-link a {
+    text-decoration: none;
+}
+
+.swiper-button-next {
+    color: #000000;
+    right: 36px !important;
+}
+
+.swiper-button-prev {
+    left: 36px !important;
+}
+
+
+/*Parte GALERIA LIZBET*/
+.GALERIAsp {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.galeria>a {
+    display: flex;
+    width: 95%;
+    height: 300px;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.galeria img {
+    width: 100%;
+    margin-left: 20px;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria a:hover img {
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(168, 39, 39, 0.572);
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box img {
+    width: 55vw;
+    max-height: 80vh;
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+/*ParteBaseDatos de LIZBET*/
+#particle-js {
+
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.BdSepulveda {
+    position: relative;
+    background-image: url(/Sepulveda/img/2825704.gif);
+    /*background-color: #ffd000;*/
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .85;
+
+}
+
+.formulario {
+    position: absolute;
+    bottom: 35px;
+    background-color: rgba(255, 255, 255, 0.486);
+    width: 40%;
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 50px rgba(255, 230, 0, 0.493);
+
+}
+
+.formu-titulo {
+    font-family: 'Montserrat', sans-serif;
+    color: #fcb900c2;
+    font-size: 25px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: 10vh left;
+    background-color: #fffdf6c5;
+    width: 95%;
+    height: 45px;
+    margin: 7px auto;
+    outline: none;
+}
+
+.item-5 {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fffdf6c5;
+    width: 98%;
+    height: 45px;
+    margin: 8px auto;
+    grid-column: 1/3;
+    outline: none;
+}
+
+.textarea {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fffdf6c5;
+    width: 98%;
+    height: 100px;
+    margin: 7px auto;
+    grid-column: 1/3;
+    outline: none;
+    resize: none;
+}
+
+.submit {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffc400e3;
+    width: 20%;
+    height: 35px;
+    margin: 15px auto;
+    grid-column: 1/3;
+    border-radius: 100px;
+    -webkit-box-shadow: 1 10px 10px rgb(0, 0, 0);
+    box-shadow: 0 10px 10px rgba(32, 32, 32, 0.493);
+
+}
+
+.submit:hover {
+    background-color: rgba(31, 45, 83, 0.63);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+/*-----------MAPA----------*/
+.FooterMapa {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+
+}
+
+.maps {
+    width: 100%;
+    height: 70vh;
+
+}
+
+iframe {
+    width: 100%;
+    height: 70vh;
+
+}
+
+/*-footer sepulveda LIZBet*/
+
+.row {
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    bottom: 0;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0 5px 50px rgb(0, 0, 0);
+}
+
+
+.container {
+    position: absolute;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffd000;
+}
+
+.Footercols {
+    padding: 0 180px;
+}
+
+.Footercols h2 {
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.Footercols h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    background-color: hwb(226 12% 55%);
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.Footercols h3 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.Footercols ul li:not(:last-child) {
+    margin-bottom: 10px;
+
+}
+
+.Footercols ul li a {
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.Footercols ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.Footercols .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffffb0;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000000;
+    transition: all 0.5s ease;
+
+}
+
+.Footercols .social-links a:hover {
+    color: #ffffff;
+
+}
+
+@media(max-width: 767px) {
+    .Footercols {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .Footercols {
+        width: 100%;
+    }
+}
